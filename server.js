@@ -113,10 +113,10 @@ app.get('/submit-name/:name', function(req,res){
     res.send(JSON.stringify(names));
 });
 
-//app.get('/:articleName',function(req, res){
-  //              var articleName= req.params.articleName; 
-    //            res.send(createTemplate(articles[articleName]));
-      //      });
+app.get('/:articleName',function(req, res){
+                var articleName= req.params.articleName; 
+                res.send(createTemplate(articles[articleName]));
+            });
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
