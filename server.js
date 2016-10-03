@@ -110,10 +110,7 @@ app.get('/submit-name/:name', function(res,req){
     //Get the name from the request
     
     var name = req.params.name;
-   
     names.push(name);
-    
-    
     res.send(JSON.stringify(names));
 });
 
