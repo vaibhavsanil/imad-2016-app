@@ -61,6 +61,9 @@ button.onclick = function(){
      }
   };
 
+         var nameInput = document.getElementById('name');
+         var name = nameInput.value;
+
      //Make the request
      
      request.open('GET','http://vaibhavsanil.imad.hasura-app.io/submit-name?name=' + name,true);
