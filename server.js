@@ -1,5 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
+
+var pool = require('pg').Pool;
 var path = require('path');
 
 var app = express();
@@ -83,6 +85,10 @@ function createTemplate(data){
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/test-db', function (req, res) {
+  
 });
 
 var names = [];
