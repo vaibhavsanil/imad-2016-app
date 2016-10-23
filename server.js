@@ -13,42 +13,7 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
-var articles={
-            'article-one': {
-            title: 'Article One | Vaibhav Sanil',
-            heading: 'Article One',
-            date: 'Sep 5 2016',
-            content:`<p>
-                        This is the content for my first article,This is the content for my first article,This is the content for my first article,
-                        This is the content for my first article,This is the content for my first article,This is the content for my first article,
-                        This is the content for my first article,This is the content for my first article,This is the content for my first article,
-                    </p>
-                    
-                    <p>
-                        This is the content for my first article,This is the content for my first article,This is the content for my first article,
-                        This is the content for my first article,This is the content for my first article,This is the content for my first article,
-                        This is the content for my first article,This is the content for my first article,This is the content for my first article,
-                    </p>
-                    
-                    <p>
-                        This is the content for my first article,This is the content for my first article,This is the content for my first article,
-                        This is the content for my first article,This is the content for my first article,This is the content for my first article,
-                        This is the content for my first article,This is the content for my first article,This is the content for my first article,
-                    </p>`
-        },
-            'article-two': {
-            title: 'Article Two | Vaibhav Sanil',
-            heading: 'Article Two',
-            date: 'Sep 10 2016',
-            content:`<p>
-                       This is article two.
-                    </p>`},
-            'article-three': {
-           title: 'Article Three | Vaibhav Sanil',
-            heading: 'Article Three',
-            date: 'Sep 12 2016',
-            content:'<p> This is article three </p>'}
-};
+
 
 function createTemplate(data){
             var title = data.title ;
