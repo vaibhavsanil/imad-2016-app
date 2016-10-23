@@ -48,9 +48,7 @@ var articles={
             title: 'Article Three | Vaibhav Sanil',
             heading: 'Article Three',
             date: 'Sep 12 2016',
-            content:`<p>
-                       This is article Three.
-                    </p>`}
+            content:`}
 };
 
 function createTemplate(data){
